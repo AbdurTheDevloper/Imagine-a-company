@@ -1,0 +1,246 @@
+*{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+    color: lightgray;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    transition: 0.5s;
+    text-transform: capitalize;
+}
+button{
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+h1,h2,h3,h4,h5,h6{
+  text-transform: capitalize;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.header-wrap{
+    background-color:#242525;
+    border-top: 2px solid black;
+}
+.menu ul li{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.menu ul li a{
+    color: lightgray;
+    display: block;
+    padding: 10px 0px;
+}
+.menu ul li a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.active{
+    border-bottom: 1px solid white;
+}
+.header-btn button{
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+}
+.header-btn button:hover{
+    background-color: deepskyblue;
+    color: black;
+}
+.header-text{
+  padding: 100px 0px;
+  padding-bottom: 120px;
+}
+.header-text h2{
+    color: white;
+}
+.btn-primary{
+    font-weight: bold;
+}
+.article{
+    padding-top: 50px;
+}
+.img-col{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-light{
+    background-color: #d5d5d5;
+}
+.btn-light:hover{
+    background-color: #aaa9a9;
+}
+.article-wrapper{
+    padding: 40px 0px;
+}
+.company-area-wrapper{
+    padding: 40px 0px;
+    border-top: 1px solid #d3d2d2;
+    border-bottom: 1px solid #d3d2d2;
+    margin-bottom: 50px;
+}
+
+.first-col{
+    border-right: 1px solid gray;
+}
+.company-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.grid-area-wrapper{
+  margin-bottom: 50px;
+  align-items: center;
+}
+.border-top-section{
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.border-top-section span{
+    width: 45%;
+    max-width: 600px;
+    background-color: #aaa9a9;
+    height: 1px;
+}
+.border-top-section p{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.grid-area2-wrapper{
+    margin-bottom: 60px;
+}
+.footer-list li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.footer-list li a{
+    color: #cbc7c7
+}
+.footer-list li a:hover{
+    color: white;
+}
+.footer-wrapper{
+
+    background-color: rgb(36, 35, 35);
+}
+.footer h5{
+    color: white;
+}
+
+.login-text{
+    color: brown;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.header-btn{
+    position: relative;
+}
+.form-box{
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    width: 335px;
+}
+.form{
+    position: absolute;
+    width: 100%;
+    transition: .6s;
+}
+.form span{
+    font-size: 50px;
+    display: inline-block;
+    color: red;
+    position: absolute;
+    top: -9%;
+    right: 4%;
+    transition: .7s;
+    text-shadow: 1px 1px 30px black;
+}
+.form span:hover{
+    color:green;
+    cursor: pointer;
+}
+#login-box{
+    top: -500px;
+}
+#register-box{
+ top: -500px;
+}
+.header-container{
+    overflow: hidden;
+}
+.menu-icon{
+    display: inline-block;
+    background-color: #eee6e6;
+    padding: 10px;
+    z-index: 9999;
+    border-radius: 5px;
+    display: none;
+}
+.menu-icon div{
+    width: 30px;
+    height: 5px;
+    margin-bottom: 3px;
+    background-color: blueviolet;
+}
+.menu-icon div:last-child{
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width:600px) {
+    .menu ul li {
+        width: 100%;
+        float: left;
+        text-align: center;
+        list-style: none;
+        margin-right: 0px;
+        transition: .5s;
+    }
+    .menu{
+        width: 100%;
+        flex-basis: 100%;
+        background-color: black;
+        position: absolute;
+        left: 0px;
+        top: -999px;
+        padding: 15px 0px;
+        text-align: center;
+        z-index: 20;
+        transition: .5s;
+    }
+    
+    .menu-icon{
+        display: inline-block;
+        background-color: #eee6e6;
+        padding: 10px;
+        display: block;
+    }
+    .form-box{
+        position: absolute;
+        top: 33px;
+        right: 0px;
+        width: 168%;
+        margin: auto;
+    }
+    .border-top-section span {
+        width: 40%;
+        max-width: 600px;
+        background-color: #aaa9a9;
+        height: 1px;
+    }
+
+}
+
